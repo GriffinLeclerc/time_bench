@@ -1,0 +1,11 @@
+[package]
+name        = "timestamp_benchamrk"
+version     = "2022.3.1"
+authors = [
+    "Griffin Leclerc <leclercgriffin@gmail.com>"
+]
+
+[dependencies]
+
+# Used for benchmarking time intervals
+time = "0.1"
