@@ -1,7 +1,5 @@
 import statistics as stats
 
-confidenceThreshold = 300
-
 file1 = open('res', 'r')
 lines = file1.readlines()
 
@@ -13,7 +11,7 @@ def printThresh(l, threshold):
     threshCount = len(outliers)
     print("Values above " + str(threshold))
     print("     Number: " + str(threshCount))
-    print("     Confidence: " + str(threshCount) + "/" + str(count) + " | or " + str(threshCount/count))
+    print("     Ratio: " + str(threshCount) + "/" + str(count) + " | or " + str(threshCount/count))
 
 
 lines = list(map(mapInt, lines))
