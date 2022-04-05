@@ -16,13 +16,11 @@ def printThresh(l, threshold):
 
 lines = list(map(mapInt, lines))
 count = len(lines)
-total = sum(lines)
-top = max(lines)
-
     
 print("Num Measurements: " + str(count))
 print("Avg: " + str(stats.mean(lines)))
-print("Max: " + str(top))
+print("Min: " + str(min(lines)))
+print("Max: " + str(max(lines)))
 
 printThresh(lines, 200)
 printThresh(lines, 300)
